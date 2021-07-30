@@ -1,0 +1,597 @@
+{
+	"info": {
+		"_postman_id": "76840962-a663-48ae-869c-b2a5f0159970",
+		"name": "HomeFinanceTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get NameTransaction",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44317/api/nametransaction",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"nametransaction"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get NameTransaction",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44317/api/nametransaction",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44317",
+							"path": [
+								"api",
+								"nametransaction"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 15 May 2021 07:28:57 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"salary\",\n        \"typeTransaction\": 1\n    },\n    {\n        \"id\": 2,\n        \"name\": \"gift\",\n        \"typeTransaction\": 1\n    },\n    {\n        \"id\": 3,\n        \"name\": \"bonus\",\n        \"typeTransaction\": 1\n    },\n    {\n        \"id\": 4,\n        \"name\": \"dividents\",\n        \"typeTransaction\": 1\n    },\n    {\n        \"id\": 5,\n        \"name\": \"sales\",\n        \"typeTransaction\": 1\n    },\n    {\n        \"id\": 6,\n        \"name\": \"inheritance\",\n        \"typeTransaction\": 1\n    },\n    {\n        \"id\": 7,\n        \"name\": \"other income\",\n        \"typeTransaction\": 1\n    },\n    {\n        \"id\": 8,\n        \"name\": \"stimulus check\",\n        \"typeTransaction\": 1\n    },\n    {\n        \"id\": 9,\n        \"name\": \"rent\",\n        \"typeTransaction\": 2\n    },\n    {\n        \"id\": 10,\n        \"name\": \"lease\",\n        \"typeTransaction\": 2\n    },\n    {\n        \"id\": 11,\n        \"name\": \"insurance\",\n        \"typeTransaction\": 2\n    },\n    {\n        \"id\": 12,\n        \"name\": \"utilities\",\n        \"typeTransaction\": 2\n    },\n    {\n        \"id\": 13,\n        \"name\": \"bank interest \",\n        \"typeTransaction\": 2\n    },\n    {\n        \"id\": 14,\n        \"name\": \"car costs\",\n        \"typeTransaction\": 2\n    },\n    {\n        \"id\": 15,\n        \"name\": \"cell phone\",\n        \"typeTransaction\": 2\n    },\n    {\n        \"id\": 16,\n        \"name\": \"TV + internet\",\n        \"typeTransaction\": 2\n    },\n    {\n        \"id\": 17,\n        \"name\": \"food\",\n        \"typeTransaction\": 2\n    },\n    {\n        \"id\": 18,\n        \"name\": \"education\",\n        \"typeTransaction\": 2\n    },\n    {\n        \"id\": 19,\n        \"name\": \"family expense\",\n        \"typeTransaction\": 2\n    },\n    {\n        \"id\": 20,\n        \"name\": \"other expense\",\n        \"typeTransaction\": 2\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Adding name transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {                \r\n        \"name\": \"vacation\",\r\n        \"typeTransaction\": \"expense\"\r\n    }\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44317/api/nametransaction",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"nametransaction"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Adding name transaction",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {              \r\n       \r\n        \"name\": \"vacation\",\r\n        \"typeTransaction\": 2\r\n    }\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44317/api/nametransaction",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44317",
+							"path": [
+								"api",
+								"nametransaction"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 15 May 2021 07:31:33 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 21,\n    \"name\": \"vacation\",\n    \"typeTransaction\": 2\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete name transaction",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44317/api/nametransaction/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"nametransaction",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete name transaction",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44317/api/nametransaction/21",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44317",
+							"path": [
+								"api",
+								"nametransaction",
+								"21"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 15 May 2021 07:32:38 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 21,\n    \"name\": \"vacation\",\n    \"typeTransaction\": 2\n}"
+				}
+			]
+		},
+		{
+			"name": "adding monney transactions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \r\n    \"Name\": \"car costs\",    \r\n    \"Amount\": 79\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44317/api/registertransaction",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"registertransaction"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "adding monney transactions",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"Name\": \"car costs\",       \r\n    \"Amount\": 79\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44317/api/registertransaction",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44317",
+							"path": [
+								"api",
+								"registertransaction"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 15 May 2021 07:33:15 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 26,\n    \"dateTransaction\": \"0001-01-01T00:00:00\",\n    \"nameTransactionId\": 0,\n    \"amount\": 79\n}"
+				}
+			]
+		},
+		{
+			"name": "Daily total income and expenses",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "date1",
+							"value": "05.01.2021",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "date2",
+							"value": "05.30.2021",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:44317/api/registertransaction?date1=05.02.2021",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"registertransaction"
+					],
+					"query": [
+						{
+							"key": "date1",
+							"value": "05.02.2021"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Daily total income and expenses",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44317/api/report?date1=05.01.2021",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44317",
+							"path": [
+								"api",
+								"report"
+							],
+							"query": [
+								{
+									"key": "date1",
+									"value": "05.01.2021"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 May 2021 06:19:18 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"dateTransaction\": \"2021-05-01T00:00:00\",\n        \"name\": \"salary\",\n        \"typeTransaction\": \"income\",\n        \"amount\": 5250\n    },\n    {\n        \"id\": 0,\n        \"dateTransaction\": \"2021-05-16T23:19:18.0820039-07:00\",\n        \"name\": \"Total Income for the date:\",\n        \"typeTransaction\": \"INCOME\",\n        \"amount\": 5250\n    },\n    {\n        \"id\": 8,\n        \"dateTransaction\": \"2021-05-01T00:00:00\",\n        \"name\": \"insurance\",\n        \"typeTransaction\": \"expense\",\n        \"amount\": 229\n    },\n    {\n        \"id\": 12,\n        \"dateTransaction\": \"2021-05-01T00:00:00\",\n        \"name\": \"TV + internet\",\n        \"typeTransaction\": \"expense\",\n        \"amount\": 79\n    },\n    {\n        \"id\": 13,\n        \"dateTransaction\": \"2021-05-01T00:00:00\",\n        \"name\": \"food\",\n        \"typeTransaction\": \"expense\",\n        \"amount\": 28\n    },\n    {\n        \"id\": 0,\n        \"dateTransaction\": \"2021-05-16T23:19:18.0820862-07:00\",\n        \"name\": \"Total Expenses for the date:\",\n        \"typeTransaction\": \"EXPENSE\",\n        \"amount\": 336\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "monthly total income and expenses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44317/api/report?date1=05.01.2021&date2=05.31.2021",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"report"
+					],
+					"query": [
+						{
+							"key": "date1",
+							"value": "05.01.2021"
+						},
+						{
+							"key": "date2",
+							"value": "05.31.2021"
+						}
+					]
+				},
+				"description": "monthly total income and expenses"
+			},
+			"response": [
+				{
+					"name": "monthly total income and expenses",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44317/api/report?date1=05.01.2021&date2=05.31.2021",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44317",
+							"path": [
+								"api",
+								"report"
+							],
+							"query": [
+								{
+									"key": "date1",
+									"value": "05.01.2021"
+								},
+								{
+									"key": "date2",
+									"value": "05.31.2021"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 May 2021 06:18:29 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"dateTransaction\": \"2021-05-01T00:00:00\",\n        \"name\": \"salary\",\n        \"typeTransaction\": \"income\",\n        \"amount\": 5250\n    },\n    {\n        \"id\": 2,\n        \"dateTransaction\": \"2021-05-03T00:00:00\",\n        \"name\": \"gift\",\n        \"typeTransaction\": \"income\",\n        \"amount\": 250\n    },\n    {\n        \"id\": 3,\n        \"dateTransaction\": \"2021-05-03T00:00:00\",\n        \"name\": \"bonus\",\n        \"typeTransaction\": \"income\",\n        \"amount\": 1380\n    },\n    {\n        \"id\": 4,\n        \"dateTransaction\": \"2021-05-05T00:00:00\",\n        \"name\": \"dividents\",\n        \"typeTransaction\": \"income\",\n        \"amount\": 245\n    },\n    {\n        \"id\": 5,\n        \"dateTransaction\": \"2021-05-04T00:00:00\",\n        \"name\": \"sales\",\n        \"typeTransaction\": \"income\",\n        \"amount\": 1800\n    },\n    {\n        \"id\": 10,\n        \"dateTransaction\": \"2021-05-14T00:00:00\",\n        \"name\": \"other income\",\n        \"typeTransaction\": \"income\",\n        \"amount\": 210\n    },\n    {\n        \"id\": 0,\n        \"dateTransaction\": \"2021-05-16T23:18:28.9047555-07:00\",\n        \"name\": \"Total Income for the date:\",\n        \"typeTransaction\": \"INCOME\",\n        \"amount\": 9135\n    },\n    {\n        \"id\": 6,\n        \"dateTransaction\": \"2021-05-02T00:00:00\",\n        \"name\": \"rent\",\n        \"typeTransaction\": \"expense\",\n        \"amount\": 1496\n    },\n    {\n        \"id\": 7,\n        \"dateTransaction\": \"2021-05-02T00:00:00\",\n        \"name\": \"lease\",\n        \"typeTransaction\": \"expense\",\n        \"amount\": 379\n    },\n    {\n        \"id\": 8,\n        \"dateTransaction\": \"2021-05-01T00:00:00\",\n        \"name\": \"insurance\",\n        \"typeTransaction\": \"expense\",\n        \"amount\": 229\n    },\n    {\n        \"id\": 9,\n        \"dateTransaction\": \"2021-05-10T00:00:00\",\n        \"name\": \"utilities\",\n        \"typeTransaction\": \"expense\",\n        \"amount\": 148\n    },\n    {\n        \"id\": 11,\n        \"dateTransaction\": \"2021-05-05T00:00:00\",\n        \"name\": \"cell phone\",\n        \"typeTransaction\": \"expense\",\n        \"amount\": 104\n    },\n    {\n        \"id\": 12,\n        \"dateTransaction\": \"2021-05-01T00:00:00\",\n        \"name\": \"TV + internet\",\n        \"typeTransaction\": \"expense\",\n        \"amount\": 79\n    },\n    {\n        \"id\": 13,\n        \"dateTransaction\": \"2021-05-01T00:00:00\",\n        \"name\": \"food\",\n        \"typeTransaction\": \"expense\",\n        \"amount\": 28\n    },\n    {\n        \"id\": 14,\n        \"dateTransaction\": \"2021-05-03T00:00:00\",\n        \"name\": \"food\",\n        \"typeTransaction\": \"expense\",\n        \"amount\": 15\n    },\n    {\n        \"id\": 15,\n        \"dateTransaction\": \"2021-05-07T00:00:00\",\n        \"name\": \"food\",\n        \"typeTransaction\": \"expense\",\n        \"amount\": 46\n    },\n    {\n        \"id\": 16,\n        \"dateTransaction\": \"2021-05-11T00:00:00\",\n        \"name\": \"food\",\n        \"typeTransaction\": \"expense\",\n        \"amount\": 25\n    },\n    {\n        \"id\": 17,\n        \"dateTransaction\": \"2021-05-17T00:00:00\",\n        \"name\": \"food\",\n        \"typeTransaction\": \"expense\",\n        \"amount\": 52\n    },\n    {\n        \"id\": 18,\n        \"dateTransaction\": \"2021-05-18T00:00:00\",\n        \"name\": \"food\",\n        \"typeTransaction\": \"expense\",\n        \"amount\": 50\n    },\n    {\n        \"id\": 19,\n        \"dateTransaction\": \"2021-05-23T00:00:00\",\n        \"name\": \"food\",\n        \"typeTransaction\": \"expense\",\n        \"amount\": 21\n    },\n    {\n        \"id\": 20,\n        \"dateTransaction\": \"2021-05-25T00:00:00\",\n        \"name\": \"food\",\n        \"typeTransaction\": \"expense\",\n        \"amount\": 107\n    },\n    {\n        \"id\": 21,\n        \"dateTransaction\": \"2021-05-30T00:00:00\",\n        \"name\": \"food\",\n        \"typeTransaction\": \"expense\",\n        \"amount\": 14\n    },\n    {\n        \"id\": 22,\n        \"dateTransaction\": \"2021-05-02T00:00:00\",\n        \"name\": \"family expense\",\n        \"typeTransaction\": \"expense\",\n        \"amount\": 340\n    },\n    {\n        \"id\": 23,\n        \"dateTransaction\": \"2021-05-12T00:00:00\",\n        \"name\": \"family expense\",\n        \"typeTransaction\": \"expense\",\n        \"amount\": 145\n    },\n    {\n        \"id\": 24,\n        \"dateTransaction\": \"2021-05-20T00:00:00\",\n        \"name\": \"other expense\",\n        \"typeTransaction\": \"expense\",\n        \"amount\": 106\n    },\n    {\n        \"id\": 25,\n        \"dateTransaction\": \"2021-05-30T00:00:00\",\n        \"name\": \"education\",\n        \"typeTransaction\": \"expense\",\n        \"amount\": 140\n    },\n    {\n        \"id\": 26,\n        \"dateTransaction\": \"2021-05-05T00:00:00\",\n        \"name\": \"family expense\",\n        \"typeTransaction\": \"expense\",\n        \"amount\": 79\n    },\n    {\n        \"id\": 0,\n        \"dateTransaction\": \"2021-05-16T23:18:28.9106459-07:00\",\n        \"name\": \"Total Expenses for the date:\",\n        \"typeTransaction\": \"EXPENSE\",\n        \"amount\": 3603\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Update name transaction",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{                \r\n        \"name\": \"taxes\",\r\n        \"typeTransaction\": \"expense\"\r\n    }\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44317/api/nametransaction",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"nametransaction"
+					]
+				},
+				"description": "Update  NameTransaction"
+			},
+			"response": [
+				{
+					"name": "Update name transaction",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{       \r\n      \"id\": 24,         \r\n        \"name\": \"taxes State\",\r\n        \"typeTransaction\": \"expense\"\r\n    }\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44317/api/nametransaction",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44317",
+							"path": [
+								"api",
+								"nametransaction"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 May 2021 07:20:54 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 24,\n    \"name\": \"taxes State\",\n    \"typeTransaction\": \"expense\"\n}"
+				}
+			]
+		}
+	]
+}
